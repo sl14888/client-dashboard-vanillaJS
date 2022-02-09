@@ -1,10 +1,12 @@
 /* eslint-disable no-console */
 // импорт стандартных библиотек Node.js
 const { existsSync, readFileSync, writeFileSync } = require('fs');
+
 const { createServer } = require('http');
 
 // файл для базы данных
 const DB_FILE = process.env.DB_FILE || './db.json';
+
 // номер порта, на котором будет запущен сервер
 const PORT = process.env.PORT || 3000;
 // префикс URI для всех методов приложения
